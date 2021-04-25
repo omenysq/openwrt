@@ -115,6 +115,7 @@ ramips_setup_interfaces()
 	netgear,jwnr2010-v5|\
 	phicomm,k2-v22.4|\
 	phicomm,k2-v22.5|\
+	phicomm,psg1218c|\
 	trendnet,tew-810dr|\
 	zbtlink,zbt-we2026)
 		ucidef_add_switch "switch0" \
@@ -359,7 +360,8 @@ ramips_setup_macs()
 	phicomm,k2-v22.4|\
 	phicomm,k2-v22.5|\
 	phicomm,k2g|\
-	phicomm,psg1218b)
+	phicomm,psg1218b|\
+	phicomm,psg1218c)
 		wan_mac=$(mtd_get_mac_binary factory 0x2e)
 		label_mac=$wan_mac
 		;;
