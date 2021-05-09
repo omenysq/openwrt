@@ -106,6 +106,9 @@ tplink,re650-v1)
 	ucidef_set_led_netdev "eth_act" "LAN act" "green:eth_act" "lan" "tx rx"
 	ucidef_set_led_netdev "eth_link" "LAN link" "green:eth_link" "lan" "link"
 	;;
+witown,treebear)
+	ucidef_set_led_netdev "internet" "internet" "green:internet" "wan"
+	;;
 xiaomi,mi-router-ac2100)
 	ucidef_set_led_netdev "wan-blue" "WAN (blue)" "blue:wan" "wan"
 	;;
