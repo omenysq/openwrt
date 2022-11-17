@@ -79,3 +79,15 @@ define Device/zn_m2
 	SOC := ipq6018
 endef
 TARGET_DEVICES += zn_m2
+
+define Device/360_v6
+	$(call Device/FitImage)
+	$(call Device/UbiFit)
+	DEVICE_VENDOR := Qihoo 360
+	DEVICE_MODEL := V6
+	BLOCKSIZE := 128k
+	PAGESIZE := 2048
+	DEVICE_DTS_CONFIG := config@cp03-c1
+	SOC := ipq6018
+endef
+TARGET_DEVICES += 360_v6
