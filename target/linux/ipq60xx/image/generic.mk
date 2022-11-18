@@ -87,6 +87,7 @@ define Device/360_v6
 	DEVICE_MODEL := V6
 	BLOCKSIZE := 128k
 	PAGESIZE := 2048
+        DEVICE_DTS := ipq6018-v6
 	DEVICE_DTS_CONFIG := config@cp03-c1
 	SOC := ipq6018
 endef
