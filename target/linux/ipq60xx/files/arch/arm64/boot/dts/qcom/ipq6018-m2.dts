@@ -64,3 +64,8 @@
 		};
 	};
 };
+&usb_0 {
+	pinctrl-0 = <&usb_vbus_pins &usb_cc_pins>;
+	pinctrl-names = "default";
+	status = "okay";
+};
