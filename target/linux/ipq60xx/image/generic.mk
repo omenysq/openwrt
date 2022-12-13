@@ -76,7 +76,8 @@ define Device/zn_m2
 	BLOCKSIZE := 128k
 	PAGESIZE := 2048
 	DEVICE_DTS_CONFIG := config@cp03-c1
-	SOC := ipq6018
+	SOC := ipq6018	
+	DEVICE_PACKAGES := kmod-usb3 kmod-usb-phy-msm
 endef
 TARGET_DEVICES += zn_m2
 
